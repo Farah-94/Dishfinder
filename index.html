@@ -6,6 +6,51 @@
     <title>Document</title>
 </head>
 <body>
+    <heade id="head">
+        <div class="v-container">
+
+            <div class="search-form">
+                <h1>Restaurant Search</h1>
+                <input type="text" id="searchInput" placeholder="Enter dish..." />
+                <button type="submit" onclick="searchRestaurants()">Submit</button> <br>
+                <label for="resultsDropdown">List </label>
+                <select id="resultsDropdown" class="display-data" onchange="store()">
+                    <option value="">List of restaurants</option>
+                </select>
+                <br>
+                <div class="dropdown">
+                    <button type="submit" class="btnDrop" onclick="optionFunction()">Order here</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="onlineOrder.html">Online Order</a>
+                        <a href="bookTable.html">Book a table </a>
+                    </div>
+                </div>
+            </div>
+
+            <img src="images/logo3.png" class="logo" alt="logo">
+
+            <video id="video2" autoplay loop muted>
+                <source src="images/pasta.mp4" type="video/mp4">
+            </video>
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#aboutus">About</a>
+                <a href="#contact">Contact </a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        </header>
+
     
 </body>
 </html>
