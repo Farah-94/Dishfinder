@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/* header styling */
+  #head {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    /* background: rgb(52, 38, 97) url('images/logo.png') center center/ cover no-repeat; */
+    /* background-repeat: no-repeat;
+  background-position: center;
+   background-size: auto;  */
+    font-size: x-large;
+    color: aliceblue;
+    font-weight: 700;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* outline: double 4px rgb(106, 70, 11); */
+  }
+
+  /* video2 is inside v-container in index.html.
+   it is background video of header*/
+  #video2 {
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    /* backdrop-filter: blur(10px); */
+  }
+
+  /* applied search bar position */
+  .search-form{
+    position: absolute;
+    z-index: 2;
+  }
+  
+  /* search bar heading1 added hover */
+  .search-form h1:hover{
+    color: #090909;
+  
+  }
+/* search bar label added hover */
+  .search-form label:hove{
+    color: #090909;
+}
+
+/* it is inside header tag */
+.v-container {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 408px;
+    overflow: hidden;
+    width: 100%;
+    
+  }
+
+  /* logo styling and position */
+  .logo {
+    width: 200px;  
+    height: 100px;
+    outline: double 4px rgb(209, 70, 16);
+    /* opacity: 0.5; */
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin: 1%;
+  }
+
+  .navigation {
+    z-index: 4;
+  top: 12px;
+  right: 40px;
+    position: absolute;
+    /* background-color: #483426; */
+    overflow: hidden;
+    /* font-style: italic; */
+    /* font-weight: 450; */
+  }
+  .navigation a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+  
+  }
+  .navigation a:hover {
+    color: #e5e5e5;
+    text-decoration: underline;
+    /* color: black; */
+  }
+  
+  .navigation a.active {
+    /* background-color: #690707f9; */
+    color: white;
+  }
+  
+  .navigation .icon {
+    display: none;
+  }
+  @media screen and (max-width: 600px) {
+    .navigation a:not(:first-child) {
+      display: none;
+    }
+  
+    .navigation a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navigation.responsive {
+      position: relative;
+    }
+  
+    .navigation.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+}
