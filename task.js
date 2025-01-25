@@ -1,10 +1,10 @@
 
-function myFunction() {
+function clickFunction() {
     var x = document.getElementById("navbar");
-    if (x.className === "topnav") {
+    if (x.className === "navigation") {
       x.className += " responsive";
     } else {
-      x.className = "topnav";
+      x.className = "navigation";
     }
   }
   $(document).ready(function () {
