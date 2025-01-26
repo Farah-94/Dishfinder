@@ -50,6 +50,7 @@
   .search-form label:hover {
     color: #090909;
 }
+
  /* search bar styling */
  #searchInput{
     width: 15rem;
@@ -70,11 +71,10 @@
 
     /* search bar placeholder styling */
   #searchInput::placeholder{
-    color: black;
+    color: rgb(197, 130, 130);
     font-size: 14px;
     float: left;
   }
-
     /* buttons styling */
   button {
     padding: 5px 10px;
@@ -85,6 +85,7 @@
     font-style: italic;
     font-size: large;
   border-radius: 5px;
+
   }
   
   /* buttons hover added */
@@ -198,49 +199,75 @@
       .text-content{
         text-align: center;
       }
-
-      .text-content > p{
+      .text-content > p {
         font-size: 44px;
         font-weight: 900;
-        margin-block: 2rem ;
-      }
-      
+        margin-block: 2rem;
+    }
+
       .slider {
         width: 50%;
-        overflow-x: hidden;
-        margin: auto;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;   
       
       }
-      
+          
+      .slide {
+       
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+      }
+
       .slides {
         display: flex;
         width: 100%;
-        transition: 1s ease;
+        transition: transform 0.5s ease-in-out;
       }
       
-      
-      .slide {
-        width: 100%;
-        flex-shrink: 0;
+      #review-slider {
+      background-color: rgb(229, 196, 153);
+        text-align: center;
       }
+      
+      #review-slider img{
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+        margin: 0 auto;
+      }      
+    
       
       .slide img {
         width: 100%;
-        height: 400px;
-        object-fit: fill;
+        height: auto;
+        object-fit: cover;
+      }
+      .review-section p, #footer{
+        font-size: medium;
+        font-style: italic;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       }
 
       /* footer styling */
       footer{
         text-align: center;
-        background-color: #a19b9b;
+        background-color: #6f4b1c;
       margin: 2%;
       padding: 2%;
       }
 
         /* footer a tag styling */
       footer a{
-        color: #88141d;
+        color: #f6f2f2;
         text-decoration: none;
         display: flex;
        flex-direction:column;
@@ -279,20 +306,115 @@
         background-color: #ddd;
       }
 
-      .btnDrop{
-      min-width: 200px;
-      margin: 1%;
-      }
-      
+     .btnDrop{
+      min-width: 100px;
+      margin: 2%;
+      } 
       .show {
         display:block;
       }
       
-      #aboutus{
+      #aboutus, .text-content, .review-section h2{
       text-align: center;
       width: 50%;
       display: block;
       margin:0 auto;
+      font-size: larger;
+    padding: 10px;
+    font-style: italic;
       }
       
-      
+.head-container{
+    margin: 4%;
+}
+
+      /* Order Page Styles */
+.orderform , .bookingform {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #eadc9c;
+    text-align: center;
+    padding: 3%;
+    
+}
+
+.orderform label, .bookingform label {
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+}
+
+.orderform input, .bookingform input {
+    width: 300px;
+    padding:10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.orderform button , .bookingform button {
+    padding: 2%;
+    background-color: #70611b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.orderform button:hover , .bookingform button:hover {
+    background-color: #cfa345;
+}
+
+.bookingform p, .orderform p{
+  font-weight: 700;
+  color: rgb(139, 41, 8);
+}
+
+#image-slider {
+  height: auto; 
+}
+
+#review-slider {
+
+  text-align: center;
+}
+
+#review-slider img{
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.review-section h2, h2{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #70611b;
+}
+#image-slider {
+  height: auto; /* Allow the height to adjust automatically */
+}
+
+#review-slider {
+  height: auto; /* Allow the height to adjust automatically */
+}
+
+.review-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-box img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.review-box p {
+  font-size: 1rem;
+  color: #333;
+  max-width: 80%;
+  margin: 0 auto;}

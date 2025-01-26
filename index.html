@@ -18,17 +18,19 @@
         <div class="search-form">
           <h1>Restaurant Search</h1>
           <input type="text" id="searchInput" placeholder="Enter dish..." />
-          <button type="submit" onclick="searchRestaurants()">Submit</button> <br>
-          <label for="resultsDropdown"> Restaurants </label>
+          <button type="submit" onclick="searchRestaurants()">Submit</button>
+           <br>
+       
+          <label for="resultsDropdown"> List</label>
           <select id="resultsDropdown" class="display-data" onchange="store()">
-            <option value=""></option>
+            <option value="">Restaurant list</option>
           </select>
-          <br>
+          
           <div class="dropdown">
             <button type="submit" class="btnDrop" onclick="optionFunction()">Order here</button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="onlineOrder.html">Online Order</a>
-              <a href="bookTable.html">Book a table </a>
+              <a href="order.html">Online Order</a>
+              <a href="booktable.html">Book a table </a>
             </div>
           </div>
         </div>
@@ -41,9 +43,9 @@
 
 
         <div class="navigation" id="navbar">
-          <a href="#home" class="active">Home</a>
+          <a href="#head" class="active">Home</a>
           <a href="#aboutus">About</a>
-          <a href="#contact">Contact </a>
+          <a href="footer">Contact </a>
   
           <a href="javascript:void(0);" class="icon" onclick="smallScreen()">
             <i class="fa fa-bars"></i>  
@@ -55,59 +57,104 @@
   
 </header>
 
+
+
+<div id="aboutus">
+  <p>
+   <h2><strong> Welcome to Dish Finder </strong></h2>
+
+    Discover the ultimate dining experience with our comprehensive restaurant search platform. Whether you're craving
+    your favorite dish or exploring new culinary delights, we've got you covered. Our intuitive search tool connects
+    you with top-rated restaurants near you, ensuring you enjoy the best meals from the finest establishments. Say
+    goodbye to the hassle of endless searching—find your next gastronomic adventure with ease and confidence right
+    here at Dish Finder. Bon appétit!</p>
+
+</div>
+
+
+
+
 <div class="slides-section">
-    <div class="text-content">
-      <p>Best restaurants in town </p>
-    </div>
-    <div class="slider">
+  <div class="text-content">
+      <h2>Best restaurants in town</h2>
+  </div>
+  <div class="slider" id="image-slider">
       <div class="slides">
-        <div class="slide"><img src="images/one.jpg" alt="Image 1"></div>
-        <div class="slide"><img src="images/two.jpg" alt="Image 2"></div>
-        <div class="slide"><img src="images/three.jpg" alt="Image 3"></div>
-        <div class="slide"><img src="images/four.jpg" alt="Image 4"></div>
-        <div class="slide"><img src="images/five.jpg" alt="Image 4"></div>
-        <div class="slide"><img src="images/six.jpg" alt="Image 4"></div>
-      
-
+          <div class="slide"><img src="images/one.jpg" alt="Image 1"></div>
+          <div class="slide"><img src="images/two.jpg" alt="Image 2"></div>
+          <div class="slide"><img src="images/three.jpg" alt="Image 3"></div>
+          <div class="slide"><img src="images/four.jpg" alt="Image 4"></div>
+          <div class="slide"><img src="images/five.jpg" alt="Image 5"></div>
+          <div class="slide"><img src="images/six.jpg" alt="Image 6"></div>
       </div>
-    </div>
   </div>
+</div>
 
-  <div id="aboutus">
-    <p>
-     <h3><strong> Welcome to Dish Finder </strong></h3>
+<div class="review-section">
+  <h2> Customer reviews</h2>
+  <div class="slider" id="review-slider">
 
-      Discover the ultimate dining experience with our comprehensive restaurant search platform. Whether you're craving
-      your favorite dish or exploring new culinary delights, we've got you covered. Our intuitive search tool connects
-      you with top-rated restaurants near you, ensuring you enjoy the best meals from the finest establishments. Say
-      goodbye to the hassle of endless searching—find your next gastronomic adventure with ease and confidence right
-      here at Dish Finder. Bon appétit!</p>
-
+      <div class="slides">
+          <div class="slide">
+        
+              <div class="review-box">
+                
+                  <img src="images/person4.jpg" alt="review1">
+                  <p> "I ordered food. It was fresh and tasty."</p>
+              </div>
+          </div>
+          <div class="slide">
+              <div class="review-box">
+                  <img src="images/person3.jpg" alt="review2">
+                  <p> "Book table online without any hustle. I enjoyed the service"</p>
+              </div>
+          </div>
+          <div class="slide">
+              <div class="review-box">
+                  <img src="images/person2.jpg" alt="review3">
+                  <p> "This website is recommended. I searched food name and it gave me lots of restaurants option."</p>
+              </div>
+          </div>
+          <div class="slide">
+            <div class="review-box">
+                <img src="images/person1.jpg" alt="review3">
+                <p> "You can search your favousite dish and its your choice to order online or reserve table. This is what i was looking for. Quick and simple. "</p>
+            </div>
+        </div>
+        <div class="slide">
+          <div class="review-box">
+              <img src="images/person5.jpg" alt="review3">
+              <p> "I had a wonderful dining experience at this restaurant. The food was excellent and the service was exceptional."</p>
+          </div>
+        </div>
+          <div class="slide">
+            <div class="review-box">
+                <img src="images/person6.jpg" alt="review3">
+                <p> "I had a wonderful dining experience at this restaurant. The food was excellent and the service was exceptional."</p>
+            </div>
+      </div>
   </div>
+</div>
+</div>
 
+  <footer id="footer">
 
-
-
-
-
-  <footer>
-
-    <p> You can find us on </p>
+  <h3>You can find us on</h3>
 
     <a href="https://www.facebook.com/">Facebook</a>
     <a href="https://www.instagram.com/">Instagram</a>
     <a href="https://www.instagram.com/">Twitter</a>
 
-<p>For complaints and query you can contact us through <strong>077654323</strong></p>
-<br>
-<p></p>
+<p>For complaints and query you can contact us through : <strong>077654323</strong></p>
+
+<p>You can contact us through email : <strong>infodishfinder@gmail.com</strong></p>
 
 
   </footer>
 
 
 
-<script> src="task.js" </script>
+  <script src="task.js"></script>
 </body>
 
 </html>

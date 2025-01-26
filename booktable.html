@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="displayRestaurantName()">
+    <header class="head-container">
+        <div class="navigation" id="navbar">
+            <a href="index.html#head" class="active">Home</a>
+            <a href="index.html#aboutus">About</a>
+            <a href="index.html#footer">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="smallScreen()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="bookingform">
+        <h2>Book a Table</h2>
+        <br>
+        <p id="restaurantName">Selected Restaurant :  </p>
+        <br>
+
+        <form id="bookingForm" action="confirmation.html" method="post">
+            <label for="customerName">Name:</label>
+            <input type="text" id="customerName" name="customerName" required>
+            <br>
+            <label for="bookingDate">Date:</label>
+            <input type="date" id="bookingDate" name="bookingDate" required>
+            <br>
+            <label for="bookingTime">Time:</label>
+            <input type="time" id="bookingTime" name="bookingTime" required>
+            <br>
+            <label for="partySize">Party Size:</label>
+            <input type="number" id="partySize" name="partySize" required>
+            <br>
+            
+            <textarea id="contactInfo" name="contactInfo" required placeholder="Write somthing"></textarea>
+            <br>
+            <button type="submit">Book Table</button>
+        </form>
+    </div>
+
+    <script src="task.js"></script>
+</body>
+</html>
