@@ -9,7 +9,7 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Vesper+Libre:wght@400;500;700;900&display=swap');
       </style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header id="head">
@@ -19,9 +19,9 @@
           <h1>Restaurant Search</h1>
           <input type="text" id="searchInput" placeholder="Enter dish..." />
           <button type="submit" onclick="searchRestaurants()">Submit</button> <br>
-          <label for="resultsDropdown">List </label>
+          <label for="resultsDropdown"> Restaurants </label>
           <select id="resultsDropdown" class="display-data" onchange="store()">
-            <option value="">List of restaurants</option>
+            <option value=""></option>
           </select>
           <br>
           <div class="dropdown">
@@ -38,13 +38,15 @@
         <video id="video2" autoplay loop muted>
           <source src="images/pasta.mp4" type="video/mp4">
         </video>
+
+
         <div class="navigation" id="navbar">
           <a href="#home" class="active">Home</a>
           <a href="#aboutus">About</a>
           <a href="#contact">Contact </a>
   
-          <a href="javascript:void(0);" class="icon" onclick="clikFunction()">
-            <i class="fa fa-bars"></i>
+          <a href="javascript:void(0);" class="icon" onclick="smallScreen()">
+            <i class="fa fa-bars"></i>  
           </a>
         </div>
   
@@ -72,10 +74,41 @@
     </div>
   </div>
 
+  <div id="aboutus">
+    <p>
+     <h3><strong> Welcome to Dish Finder </strong></h3>
+
+      Discover the ultimate dining experience with our comprehensive restaurant search platform. Whether you're craving
+      your favorite dish or exploring new culinary delights, we've got you covered. Our intuitive search tool connects
+      you with top-rated restaurants near you, ensuring you enjoy the best meals from the finest establishments. Say
+      goodbye to the hassle of endless searching—find your next gastronomic adventure with ease and confidence right
+      here at Dish Finder. Bon appétit!</p>
+
+  </div>
 
 
 
 
+
+
+  <footer>
+
+    <p> You can find us on </p>
+
+    <a href="https://www.facebook.com/">Facebook</a>
+    <a href="https://www.instagram.com/">Instagram</a>
+    <a href="https://www.instagram.com/">Twitter</a>
+
+<p>For complaints and query you can contact us through <strong>077654323</strong></p>
+<br>
+<p></p>
+
+
+  </footer>
+
+
+
+<script> src="task.js" </script>
 </body>
 
 </html>
