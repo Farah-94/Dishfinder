@@ -7,6 +7,7 @@ function smallScreen() { // this function is used to show the navigation bar in 
       x.className = "navigation"; // if the class name is not equal to navigation then it will set the class name to navigation
     }
   }
+  
   $(document).ready(function () {
     let currentIndex = 0;
     const slides = $('.slides');
@@ -51,4 +52,7 @@ function smallScreen() { // this function is used to show the navigation bar in 
     }
   }
   
+  function optionFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
   

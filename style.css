@@ -194,14 +194,17 @@
         width: 100%;
         padding: 2rem;
       }
+
       .text-content{
         text-align: center;
       }
+
       .text-content > p{
         font-size: 44px;
         font-weight: 900;
         margin-block: 2rem ;
       }
+      
       .slider {
         width: 50%;
         overflow-x: hidden;
@@ -275,6 +278,7 @@
       {
         background-color: #ddd;
       }
+
       .btnDrop{
       min-width: 200px;
       margin: 1%;
