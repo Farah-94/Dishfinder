@@ -393,11 +393,11 @@
   color: #70611b;
 }
 #image-slider {
-  height: auto; /* Allow the height to adjust automatically */
+  height: auto; 
 }
 
 #review-slider {
-  height: auto; /* Allow the height to adjust automatically */
+  height: auto; 
 }
 
 .review-box {

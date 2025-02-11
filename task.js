@@ -1,12 +1,17 @@
-
-function smallScreen() { // this function is used to show the navigation bar in the small screen when the user click on the icon
-    var x = document.getElementById("navbar");
-    if (x.className === "navigation") { // check if the class name is equal to navigation
-      x.className += " responsive"; // add the class name navigation responsive
-    } else {
-      x.className = "navigation"; // if the class name is not equal to navigation then it will set the class name to navigation
-    }
+function smallScreen() { 
+  var x = document.getElementById("navbar");
+  if (x.className === "navigation") { 
+      x.className += " responsive"; 
+  } else {
+      x.className = "navigation"; 
   }
+}
+
+document.querySelectorAll('a').forEach(function(anchor) {
+  anchor.addEventListener('click', function() {
+      smallScreen(); 
+  });
+});
 
   document.addEventListener('DOMContentLoaded', (event) => {
     const imageSlider = document.querySelector('#image-slider .slides');

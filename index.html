@@ -17,39 +17,35 @@
 
         <div class="search-form">
           <h1>Restaurant Search</h1>
-          <input type="text" id="searchInput" placeholder="Enter dish..." />
-          <button type="submit" onclick="searchRestaurants()">Submit</button>
+          <input type="text" id="searchInput" placeholder="Enter dish..." aria-label="Search input for dishes">
+          <button type="submit" onclick="searchRestaurants()" aria-label="submit button">Submit</button>
            <br>
        
           <label for="resultsDropdown"> List</label>
-          <select id="resultsDropdown" class="display-data" onchange="store()">
+          <select id="resultsDropdown" class="display-data" onchange="store()" aria-label="Dropdown for restaurant list">
             <option value="">Restaurant list</option>
           </select>
           
           <div class="dropdown">
-            <button type="submit" class="btnDrop" onclick="optionFunction()">Order here</button>
-            <div id="myDropdown" class="dropdown-content">
+            <button type="submit" class="btnDrop" onclick="optionFunction()" aria-label="Dropdown button for order options">Order here</button>
+            <div id="myDropdown" class="dropdown-content" aria-label="Order options">
               <a href="order.html">Online Order</a>
               <a href="booktable.html">Book a table </a>
             </div>
           </div>
         </div>
   
-        <img src="images/logo3.png" class="logo" alt="logo">
+        <img src="images/logo3.png" class="logo" alt="logo" aria-label="Website logo">
   
-        <video id="video2" autoplay loop muted>
+        <video id="video2" autoplay loop muted aria-label="Pasta served, its a promotional video to attract users">
           <source src="images/pasta.mp4" type="video/mp4">
         </video>
 
 
         <div class="navigation" id="navbar">
-          <a href="#head" class="active">Home</a>
-          <a href="#aboutus">About</a>
-          <a href="footer">Contact </a>
-  
-          <a href="javascript:void(0);" class="icon" onclick="smallScreen()">
-            <i class="fa fa-bars"></i>  
-          </a>
+          <a href="#head" class="active" aria-label="Internal link for home">Home</a>
+          <a href="#aboutus" aria-label=" Internal link for About us">About</a>
+          <a href="#footer" aria-label="Internal link for Contact us">Contact</a>
         </div>
   
   
@@ -60,10 +56,10 @@
 
 
 <div id="aboutus">
-  <p>
+  
    <h2><strong> Welcome to Dish Finder </strong></h2>
 
-    Discover the ultimate dining experience with our comprehensive restaurant search platform. Whether you're craving
+  <p> Discover the ultimate dining experience with our comprehensive restaurant search platform. Whether you're craving
     your favorite dish or exploring new culinary delights, we've got you covered. Our intuitive search tool connects
     you with top-rated restaurants near you, ensuring you enjoy the best meals from the finest establishments. Say
     goodbye to the hassle of endless searching—find your next gastronomic adventure with ease and confidence right
@@ -71,65 +67,60 @@
 
 </div>
 
-
-
-
-<div class="slides-section">
+<div class="slides-section" aria-label="Best restaurants slideshow">
   <div class="text-content">
       <h2>Best restaurants in town</h2>
   </div>
   <div class="slider" id="image-slider">
       <div class="slides">
-          <div class="slide"><img src="images/one.jpg" alt="Image 1"></div>
-          <div class="slide"><img src="images/two.jpg" alt="Image 2"></div>
-          <div class="slide"><img src="images/three.jpg" alt="Image 3"></div>
-          <div class="slide"><img src="images/four.jpg" alt="Image 4"></div>
-          <div class="slide"><img src="images/five.jpg" alt="Image 5"></div>
-          <div class="slide"><img src="images/six.jpg" alt="Image 6"></div>
+          <div class="slide"><img src="images/one.jpg" alt="Image 1" aria-label="A couple standing outside a restaurant"></div>
+          <div class="slide"><img src="images/two.jpg" alt="Image 2" aria-label="Door image of a restaurant"></div>
+          <div class="slide"><img src="images/three.jpg" alt="Image 3" aria-label="Red bruicks building of restaurant"></div>
+          <div class="slide"><img src="images/four.jpg" alt="Image 4" aria-label="chair-tables are placed outside restaurant"></div>
+          <div class="slide"><img src="images/five.jpg" alt="Image 5" aria-label="Inside enviroment of a restaurant"></div>
+          <div class="slide"><img src="images/six.jpg" alt="Image 6" aria-label="Restaurant inside picture"></div>
       </div>
   </div>
 </div>
 
-<div class="review-section">
+<div class="review-section" aria-label="Customer reviews section">
   <h2> Customer reviews</h2>
   <div class="slider" id="review-slider">
 
       <div class="slides">
           <div class="slide">
-        
-              <div class="review-box">
-                
+              <div class="review-box" aria-label="A girl smiling wearing black and white vertical lines shirt">
                   <img src="images/person4.jpg" alt="review1">
                   <p> "I ordered food. It was fresh and tasty."</p>
               </div>
           </div>
           <div class="slide">
-              <div class="review-box">
+              <div class="review-box" aria-label="A teenage boy smiling wearing green t-shirt">
                   <img src="images/person3.jpg" alt="review2">
                   <p> "Book table online without any hustle. I enjoyed the service"</p>
               </div>
           </div>
           <div class="slide">
-              <div class="review-box">
+              <div class="review-box" aria-label="A young man smiling wearing white t-shirt. Pointing his index fingers to himself">
                   <img src="images/person2.jpg" alt="review3">
                   <p> "This website is recommended. I searched food name and it gave me lots of restaurants option."</p>
               </div>
           </div>
           <div class="slide">
-            <div class="review-box">
-                <img src="images/person1.jpg" alt="review3">
-                <p> "You can search your favousite dish and its your choice to order online or reserve table. This is what i was looking for. Quick and simple. "</p>
+            <div class="review-box" aria-label="A young man wearing dark brown jumper">
+                <img src="images/person1.jpg" alt="review4">
+                <p> "You can search your favorite dish and it's your choice to order online or reserve a table. This is what I was looking for. Quick and simple."</p>
             </div>
         </div>
         <div class="slide">
-          <div class="review-box">
-              <img src="images/person5.jpg" alt="review3">
+          <div class="review-box" aria-label="white background, teenage boy smiling wearing blue jeans shirt">
+              <img src="images/person5.jpg" alt="review5">
               <p> "I had a wonderful dining experience at this restaurant. The food was excellent and the service was exceptional."</p>
           </div>
         </div>
           <div class="slide">
-            <div class="review-box">
-                <img src="images/person6.jpg" alt="review3">
+            <div class="review-box" aria-label="white background, a man smiling wearing light blue shirt">
+                <img src="images/person6.jpg" alt="review6">
                 <p> "I had a wonderful dining experience at this restaurant. The food was excellent and the service was exceptional."</p>
             </div>
       </div>
@@ -141,20 +132,16 @@
 
   <h3>You can find us on</h3>
 
-    <a href="https://www.facebook.com/">Facebook</a>
-    <a href="https://www.instagram.com/">Instagram</a>
-    <a href="https://www.instagram.com/">Twitter</a>
+    <a href="https://www.facebook.com/" aria-label="Facebook link">Facebook</a>
+    <a href="https://www.instagram.com/" aria-label="Instagram link">Instagram</a>
+    <a href="https://www.instagram.com/" aria-label="Twitter link">Twitter</a>
 
-<p>For complaints and query you can contact us through : <strong>077654323</strong></p>
+<p>For complaints and queries, you can contact us through: <strong>077654323</strong></p>
 
-<p>You can contact us through email : <strong>infodishfinder@gmail.com</strong></p>
-
+<p>You can contact us through email: <strong>infodishfinder@gmail.com</strong></p>
 
   </footer>
 
-
-
   <script src="task.js"></script>
 </body>
-
 </html>
