@@ -46,6 +46,7 @@ document.querySelectorAll('a').forEach(function(anchor) {
     const input = document.getElementById('searchInput').value.toLowerCase(); // Get the input value and convert it to lowercase
     const resultsDropdown = document.getElementById('resultsDropdown'); // Get the dropdown element inside select tag
     // resultsDropdown.innerHTML = '<option value="">select </option>'; // you can rewrite in option tag
+    
     try { // it is used to handle the error
         const response = await fetch(`http://localhost:3000/search?query=${input}`); // await is used to pause the execution until fetch completes 
         const data = await response.json(); // await is used to pause the execution until data convert in json format
@@ -62,7 +63,9 @@ document.querySelectorAll('a').forEach(function(anchor) {
             option.textContent = 'No results found'; //it will show the message in the dropdown
             resultsDropdown.appendChild(option); 
         }
-    } catch (error) { // it will handle the error
+    } 
+    
+    catch (error) { // it will handle the error
         console.error('Error:', error); // it will show the error in the console
         const option = document.createElement('option'); // it will create the option element
         option.value = '';      // it will set the value of the option to empty
@@ -87,7 +90,7 @@ var selectedRestaurant = document.getElementById("resultsDropdown").value;
 
   function displayRestaurantName() {
     const selectedRestaurant = document.getElementById("selectedRestaurant");
-  restaurantNameElement.innerText = " "; // Clear previous content
+  selectedRestaurant.innerText = " "; // Clear previous content
 
     const restaurantName = localStorage.getItem("selectedRestaurant");
     if (restaurantName) {

@@ -12,7 +12,7 @@ app.use(cors());
 app.get('/search', async (req, res) => {
     console.log('Received request:', req.query); 
     const { query } = req.query;
-    const baseUrl = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json';
+    const baseUrl = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'; //API URL
     try {
         const response = await fetch(`${baseUrl}?location=51.5074,-0.1278&radius=5000&type=restaurant&keyword=${query}&key=${apiKey}`);
         const data = await response.json();
