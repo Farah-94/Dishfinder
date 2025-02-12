@@ -5,7 +5,7 @@ import cors from 'cors';
 const app = express();
 const port = 3000;
 
-const apiKey = ''; // API key
+const apiKey = 'AIzaSyBU2-TW07AVkZTFKiFwqgnx1ijhObNXcxE'; // API key
 
 app.use(cors()); 
 
