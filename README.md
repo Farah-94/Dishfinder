@@ -10,7 +10,7 @@
 6. [Colour-Scheme](#colour-scheme)
 7. [Typography](#typography)
 8. [Imagery](#imagery)
-9. [Test-Plan](#test-plan)
+9. [Testing](#testing)
 
 # Introduction
  - Welcome to DishFinder, this is an innovative website designed to revolutionize the way you discover and enjoy your favorite dishes. Experinece the power of HTML, CSS, and JavaScript, our platform provides a seamless and engaging user experience. On the backend, we've integrated Node.js and Express to provide the great performance and efficient server-side operations. Additionally, jQuery enhances the interactivity and responsiveness of our site.
@@ -118,3 +118,11 @@
 - ![review-person](images/person5.jpg)
 - ![review-person](images/person6.jpg)
   
+## Testing
+### HTML Validation
+- [index.html](/images/index.html%20validation.png)
+- [order.html](/images/order.html%20validation.png)
+- [bookTable.html](/images/booktablehtml%20validationpng)
+
+### Css Validation
+- [style.css](/images/css%20validation.png)

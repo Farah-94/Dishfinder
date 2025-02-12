@@ -16,13 +16,13 @@
         </div>
     </header>
 
-    <div class="bookingform" aria-label="Booking form section">
+    <div class="bookingform">
         <h2>Book a Table</h2>
         <br>
-        <p id="restaurantName" aria-label="Selected restaurant">Selected Restaurant: </p>
+        <p id="restaurantName">Selected Restaurant: </p>
         <br>
 
-        <form id="bookingForm" action="confirmation.html" method="post" aria-label="Booking form">
+        <form id="bookingForm" action="confirmation.html" method="post">
             <label for="customerName">Name:</label>
             <input type="text" id="customerName" name="customerName" required aria-label="Customer name">
             <br>
@@ -32,5 +32,13 @@
             <label for="bookingTime">Time:</label>
             <input type="time" id="bookingTime" name="bookingTime" required aria-label="Booking time">
             <br>
-            <label for="partySize">Party Size:</label>
-            <input type="number" id="partySize" name="partySize" required aria-label
+            <label for="noOfPoeple">No of poeple:</label>
+            <input type="number" id="noOfPoeple" name="noOfPoeple" required >
+<br>
+            <button type="submit">Submit</button>
+            </form>
+    </div>
+            <script src="task.js"></script>
+        </body>
+        </html>
+        

@@ -76,7 +76,8 @@ document.querySelectorAll('a').forEach(function(anchor) {
   }
 
   function store() {
-    var selectedRestaurant = document.getElementById("resultsDropdown").value;
+
+var selectedRestaurant = document.getElementById("resultsDropdown").value;
     if (selectedRestaurant) {
       localStorage.setItem("selectedRestaurant", selectedRestaurant);
     }
@@ -85,7 +86,10 @@ document.querySelectorAll('a').forEach(function(anchor) {
 
 
   function displayRestaurantName() {
-    var restaurantName = localStorage.getItem("selectedRestaurant");
+    const selectedRestaurant = document.getElementById("selectedRestaurant");
+  restaurantNameElement.innerText = " "; // Clear previous content
+
+    const restaurantName = localStorage.getItem("selectedRestaurant");
     if (restaurantName) {
       document.getElementById("restaurantName").innerText += restaurantName;
     }
