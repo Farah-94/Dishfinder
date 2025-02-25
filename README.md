@@ -14,7 +14,7 @@
 10. [Wireframes](#wireframes)
 
 # Introduction
- - Welcome to DishFinder, this is an innovative website designed to revolutionize the way you discover and enjoy your favorite dishes. Experinece the power of HTML, CSS, and JavaScript, our platform provides a seamless and engaging user experience. On the backend, we've integrated Node.js and Express to provide the great performance and efficient server-side operations. Additionally, jQuery enhances the interactivity and responsiveness of our site.
+ - Welcome to [DishFinder](https://farah-94.github.io/Dishfinder/index), this is an innovative website designed to revolutionize the way you discover and enjoy your favorite dishes. Experinece the power of HTML, CSS, and JavaScript, our platform provides a seamless and engaging user experience. On the backend, we've integrated Node.js and Express to provide the great performance and efficient server-side operations. Additionally, jQuery enhances the interactivity and responsiveness of our site.
 
  ## Purpose
   - DishFinder allows you to search for any dish by name and instantly find nearby restaurants that offer it with high ratings. Whether you're planning to dine out or prefer the convenience of ordering online, our platform provides you with the option to book a table or place an order directly from the comfort of your home.</p>
