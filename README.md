@@ -17,7 +17,18 @@
  - Welcome to [DishFinder](https://farah-94.github.io/Dishfinder/index), this is an innovative website designed to revolutionize the way you discover and enjoy your favorite dishes. Experinece the power of HTML, CSS, and JavaScript, our platform provides a seamless and engaging user experience. On the backend, we've integrated Node.js and Express to provide the great performance and efficient server-side operations. Additionally, jQuery enhances the interactivity and responsiveness of our site.
 
  ## Purpose
-  - DishFinder allows you to search for any dish by name and instantly find nearby restaurants that offer it with high ratings. Whether you're planning to dine out or prefer the convenience of ordering online, our platform provides you with the option to book a table or place an order directly from the comfort of your home.</p>
+  - DishFinder allows you to search for any dish by name and instantly find nearby restaurants that offer it with high ratings. Whether you're planning to dine out or prefer the convenience of ordering online, our platform provides you with the option to book a table or place an order directly from the comfort of your home.
+
+ ## Programme used
+ 1. [Google Fonts](https://fonts.google.com/)
+ 2. [githUb](https://github.com/)
+ 3. [Figma](https://www.figma.com/)
+ 4. [jQuery](https://jquery.com/) 
+ 5. [Freepik](https://www.freepik.com/)
+ 6. [logoapp](https://logo.app/?msclkid=e9b12584f9051a2a4d83423abcfe4636&utm_source=bing&utm_medium=cpc&utm_campaign=Logo%20Design&utm_term=logo%20creator&utm_content=Logo%201)
+ 7. [w3school](https://www.w3schools.com/)
+ 8. [Gantt Chart](https://create.microsoft.com/en-us/templates/gantt-charts)
+
 
 ## Deployment
 1. Login to GitHub
@@ -81,6 +92,8 @@
      - We use a flexible design to ensure content is well-organized and easy to navigate.
  * Responsive Design
      - The website is optimized for both desktop and mobile devices, providing a seamless experience across all platforms.
+ * Language used 
+     - **HTML**, **CSS** and **JavaScript**
 
 ### Colour Scheme
  *  index.html 
@@ -105,6 +118,7 @@
   #### Index.html
    ##### Logo
 - [logo](images/logo3.png)     
+  - logo created by [logo.app](https://logo.app/?msclkid=ba7cfa0b51671acf237c9db510c797c7&utm_source=bing&utm_medium=cpc&utm_campaign=Logo%20Design&utm_term=logo%20maker%20free&utm_content=Logo%201)
 * Content Images 
 - [restaurant-slider](images/one.jpg)
 - [restaurant-slider](images/two.jpg)
@@ -118,8 +132,10 @@
 - [review-person](images/person4.jpg)
 - [review-person](images/person5.jpg)
 - [review-person](images/person6.jpg)
-  
+   - Images taken from [Freepik](https://www.freepik.com/)
+
 ## Testing
+  - [Test Plan]() 
 ### HTML Validation
 - [index.html](/images/index.html%20validation.png)
 - [order.html](/images/order.html%20validation.png)
@@ -130,3 +146,4 @@
 
 ## Wireframes
 - [index.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?m=auto&t=D0OllQeRbRTAJY2U-6)
+

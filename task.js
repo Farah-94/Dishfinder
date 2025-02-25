@@ -81,7 +81,8 @@ document.querySelectorAll('a').forEach(function(anchor) {
   function store() {
 
 var selectedRestaurant = document.getElementById("resultsDropdown").value;
-    if (selectedRestaurant) {
+    if (selectedRestaurant)
+       {
       localStorage.setItem("selectedRestaurant", selectedRestaurant);
     }
   }
@@ -89,12 +90,11 @@ var selectedRestaurant = document.getElementById("resultsDropdown").value;
 
 
   function displayRestaurantName() {
-    const selectedRestaurant = document.getElementById("selectedRestaurant");
-  selectedRestaurant.innerText = " "; // Clear previous content
-
     const restaurantName = localStorage.getItem("selectedRestaurant");
     if (restaurantName) {
-      document.getElementById("restaurantName").innerText += restaurantName;
+        document.getElementById("restaurantName").innerText += restaurantName;
+        localStorage.removeItem("selectedRestaurant"); // Clear the restaurant name from local storage
     }
-  }
+}
+
   
