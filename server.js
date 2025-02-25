@@ -1,8 +1,8 @@
-import express from 'express';
-import fetch from 'node-fetch';
+import file from 'express';
+import filefetch from 'node-fetch';
 import cors from 'cors';
 
-const app = express();
+const app = file();
 const port = 3000;
 
 const apiKey = 'AIzaSyBU2-TW07AVkZTFKiFwqgnx1ijhObNXcxE'; // API key

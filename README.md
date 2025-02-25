@@ -11,6 +11,7 @@
 7. [Typography](#typography)
 8. [Imagery](#imagery)
 9. [Testing](#testing)
+10. [Wireframes](#wireframes)
 
 # Introduction
  - Welcome to DishFinder, this is an innovative website designed to revolutionize the way you discover and enjoy your favorite dishes. Experinece the power of HTML, CSS, and JavaScript, our platform provides a seamless and engaging user experience. On the backend, we've integrated Node.js and Express to provide the great performance and efficient server-side operations. Additionally, jQuery enhances the interactivity and responsiveness of our site.
@@ -103,20 +104,20 @@
 ### Imagery
   #### Index.html
    ##### Logo
-- ![logo](images/logo3.png)     
+- [logo](images/logo3.png)     
 * Content Images 
-- ![restaurant-slider](images/one.jpg)
-- ![restaurant-slider](images/two.jpg)
-- ![restaurant-slider](images/three.jpg)
-- ![restaurant-slider](images/four.jpg)
-- ![restaurant-slider](images/five.jpg)
-- ![restaurant-slider](images/six.jpg)
-- ![review-person](images/person1.jpg)
-- ![review-person](images/person2.jpg)
-- ![review-person](images/person3.jpg)
-- ![review-person](images/person4.jpg)
-- ![review-person](images/person5.jpg)
-- ![review-person](images/person6.jpg)
+- [restaurant-slider](images/one.jpg)
+- [restaurant-slider](images/two.jpg)
+- [restaurant-slider](images/three.jpg)
+- [restaurant-slider](images/four.jpg)
+- [restaurant-slider](images/five.jpg)
+- [restaurant-slider](images/six.jpg)
+- [review-person](images/person1.jpg)
+- [review-person](images/person2.jpg)
+- [review-person](images/person3.jpg)
+- [review-person](images/person4.jpg)
+- [review-person](images/person5.jpg)
+- [review-person](images/person6.jpg)
   
 ## Testing
 ### HTML Validation
@@ -126,3 +127,6 @@
 
 ### Css Validation
 - [style.css](/images/css%20validation.png)
+
+## Wireframes
+- [index.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?m=auto&t=D0OllQeRbRTAJY2U-6)
