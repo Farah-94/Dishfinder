@@ -79,7 +79,6 @@ document.querySelectorAll('a').forEach(function(anchor) {
   }
 
   function store() {
-
 var selectedRestaurant = document.getElementById("resultsDropdown").value;
     if (selectedRestaurant)
        {

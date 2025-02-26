@@ -95,6 +95,12 @@
  * Language used 
      - **HTML**, **CSS** and **JavaScript**
 
+## Wireframes
+- [index.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?m=auto&t=D0OllQeRbRTAJY2U-6)
+
+## Gantt Chart
+- [Project Gantt Chart](https://1drv.ms/x/c/e1af83f369e97fb7/EbNxbjGCaRRPi7g7jGNPP9AB8MPIjW2vIQChNVPAcso9Ww?e=mla60Y)
+
 ### Colour Scheme
  *  index.html 
     - page background-color: white 
@@ -135,7 +141,9 @@
    - Images taken from [Freepik](https://www.freepik.com/)
 
 ## Testing
-  - [Test Plan]() 
+
+  - [Test Plan](https://1drv.ms/w/c/e1af83f369e97fb7/EeGRedxvcdJFsWF-GYSQpH0BGP9XWgRi9BNgFmlA6PDrhQ?e=lGBLSr)
+
 ### HTML Validation
 - [index.html](/images/index.html%20validation.png)
 - [order.html](/images/order.html%20validation.png)
@@ -144,6 +152,5 @@
 ### Css Validation
 - [style.css](/images/css%20validation.png)
 
-## Wireframes
-- [index.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?m=auto&t=D0OllQeRbRTAJY2U-6)
+
 
