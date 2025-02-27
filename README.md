@@ -97,6 +97,8 @@
 
 ## Wireframes
 - [index.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?m=auto&t=D0OllQeRbRTAJY2U-6)
+- [order.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?node-id=9-2&t=vAhhSK0mWCHZa5kp-1)
+- [booktable.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?node-id=9-27&t=vAhhSK0mWCHZa5kp-1)
 
 ## Gantt Chart
 - [Project Gantt Chart](https://1drv.ms/x/c/e1af83f369e97fb7/EbNxbjGCaRRPi7g7jGNPP9AB8MPIjW2vIQChNVPAcso9Ww?e=mla60Y)
