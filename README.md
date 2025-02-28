@@ -158,3 +158,5 @@
 - [Page performance mobile](/images/performance.png)
 - [Page performance desktop](/images/performance%20(2).png)
 
+### JSHint
+- [JSHint](/images/jshint.png)
