@@ -1,3 +1,5 @@
+/* jshint esversion: 8 */
+
 function smallScreen() { 
   var x = document.getElementById("navbar");
   if (x.className === "navigation") { 
@@ -35,7 +37,7 @@ document.querySelectorAll('a').forEach(function(anchor) {
                     currentIndex = -1; // Reset index to start from 0 on the next interval
                 }, 4000); // Delay time in milliseconds
             }
-        }, 5000); // Change slide every 4 seconds
+        }, 5000); // Change slide every 5 seconds
     }
 
     startSliders();
