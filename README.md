@@ -154,5 +154,7 @@
 ### Css Validation
 - [style.css](/images/css%20validation.png)
 
-
+### Performance
+- [Page performance mobile](/images/performance.png)
+- [Page performance desktop](/images/performance%20(2).png)
 
