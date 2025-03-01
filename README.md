@@ -15,15 +15,13 @@
 
 
 # Introduction
- - Welcome to [DishFinder](https://farah-94.github.io/Dishfinder/index),
+- Welcome to [DishFinder](https://farah-94.github.io/Dishfinder/index),
    this website is responsive on all devices. You can experience the power of HTML, CSS and JavaScript. This is an innovative website designed to revolutionize the way you discover and enjoy your favorite dishes. There is a search bar on the top of the website to type your dish name and it can provide you the list of the nearer restaurants, which have good ratings with their addresses. This is made possible by backend operations, integrated Node.js and Express to provide the great performance. Furthermore, you can select your restaurant name on the list and go for order food online/book your table options. This website has aim to deliver its two services.
    1. Online order 
    2. Book a table 
-   By clicking the above options, user need to fill out the required form. This platform provide an engaging user experience.
+- By clicking the above options, user need to fill out the required form. This platform provide an engaging user experience.
 
-
- 
-    ### Website 
+  ## Website 
     - [Index](/images/index.png)
     - [order](/images/order.png)
     - [booktable](/images/booktable.png)
@@ -174,3 +172,11 @@
  7. [w3school](https://www.w3schools.com/)
  8. [Gantt Chart](https://create.microsoft.com/en-us/templates/gantt-charts)
  9. [W3C](https://validator.w3.org/)
+
+## Help used
+
+ - W3school
+ - Youtube
+ - Codeinstitute
+ - Online classes
+ - Udemy
