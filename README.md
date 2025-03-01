@@ -28,16 +28,16 @@
 
 
 # Deployment
-1. Login to GitHub
-2. From the list of the repositories on the screen, select projectonemilestoneone
-3. From the menu items near the top of the page, select settings
-4. Scroll down to the GitHub Pages section
-5. Under source click the drop-down menu labelled Name and select Master Branch
-6. On selecting Master Branch, the page is automatically refreshed, and the website is now deployed.
-7. At the moment of submitting the Milestone project, the Development Branch and Master Branch are identical.
+ 1. Login to GitHub
+ 2. From the list of the repositories on the screen, select projectonemilestoneone
+ 3. From the menu items near the top of the page, select settings
+ 4. Scroll down to the GitHub Pages section
+ 5. Under source click the drop-down menu labelled Name and select Master Branch
+ 6. On selecting Master Branch, the page is automatically refreshed, and the website is now deployed.
+ 7. At the moment of submitting the Milestone project, the Development Branch and Master Branch are identical.
 
 ## How to Run the Project Locally
-1. A Github account. Create a Github Account [here](https://github.com/join)
+1. A Github account. Create a Github Account [here](https://github.com join)
 2. Use the Chrome browser then follow these steps:
    - Install the Gitpod Browser Extension for Chrome
    - After installation, restart the browser
@@ -93,14 +93,14 @@
      - **HTML**, **CSS** and **JavaScript**
 
  ### Wireframes
-- [index.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?m=auto&t=D0OllQeRbRTAJY2U-6)
-- [order.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?node-id=9-2&t=vAhhSK0mWCHZa5kp-1)
-- [booktable.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?node-id=9-27&t=vAhhSK0mWCHZa5kp-1)
+ - [index.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?m=auto&t=D0OllQeRbRTAJY2U-6)
+ - [order.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?node-id=9-2&t=vAhhSK0mWCHZa5kp-1)
+ - [booktable.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?node-id=9-27&t=vAhhSK0mWCHZa5kp-1)
 
  ### Gantt Chart
-- [Project Gantt Chart](https://1drv.ms/x/c/e1af83f369e97fb7/EbNxbjGCaRRPi7g7jGNPP9AB8MPIjW2vIQChNVPAcso9Ww?e=mla60Y)
+ - [Project Gantt Chart](https://1drv.ms/x/c/e1af83f369e97fb7/EbNxbjGCaRRPi7g7jGNPP9AB8MPIjW2vIQChNVPAcso9Ww?e=mla60Y)
 
-## Colour Scheme
+# Colour Scheme
  *  index.html 
     - page background-color: white 
     - header background-color : #968e5c          
@@ -115,11 +115,11 @@
     - page background-color: white 
     - form background-color : #eadc9c     
 
-### Typography
+# Typography
 * Google Fonts 
      - Google italic fonts : @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Vesper+Libre:wght@400;500;700;900&display=swap');
 
-### Imagery
+# Imagery
    #### Logo
 - [logo](images/logo3.png)     
   - logo created by [logo.app](https://logo.app/?msclkid=ba7cfa0b51671acf237c9db510c797c7&utm_source=bing&utm_medium=cpc&utm_campaign=Logo%20Design&utm_term=logo%20maker%20free&utm_content=Logo%201)
@@ -143,22 +143,22 @@
 
   - [Test Plan](https://1drv.ms/w/c/e1af83f369e97fb7/EeGRedxvcdJFsWF-GYSQpH0BGP9XWgRi9BNgFmlA6PDrhQ?e=lGBLSr)
 
-### HTML Validation
-- [index.html](/images/index.html%20validation.png)
-- [order.html](/images/order.html%20validation.png)
-- [bookTable.html](/images/booktablehtml%20validationpng)
+ ### HTML Validation
+ - [index.html](/images/index.html%20validation.png)
+ - [order.html](/images/order.html%20validation.png)
+ - [bookTable.html](/images/booktablehtml%20validationpng)
 
-### Css Validation
-- [style.css](/images/css%20validation.png)
+ ### Css Validation
+ - [style.css](/images/css%20validation.png)
 
-### Performance
-- [Page performance mobile](/images/performance.png)
-- [Page performance desktop](/images/performance%20(2).png)
+ ### Performance
+ - [Page performance mobile](/images/performance.png)
+ - [Page performance desktop](/images/performance%20(2).png)
 
-### JSHint
-- [JSHint](/images/jshint.png)
+ ### JSHint
+ - [JSHint](/images/jshint.png)
 
- ## Programme used
+# Programme used
  1. [Google Fonts](https://fonts.google.com/)
  2. [githUb](https://github.com/)
  3. [Figma](https://www.figma.com/)
