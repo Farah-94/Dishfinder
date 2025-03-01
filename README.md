@@ -1,4 +1,4 @@
-<h1 style="text-align:center;">DishFinder</h1>
+# **DishFinder**
 <img src="images/responsive.png" with="100%" height="30%" >
 
 # Table of Contents
@@ -167,3 +167,4 @@
  6. [logoapp](https://logo.app/?msclkid=e9b12584f9051a2a4d83423abcfe4636&utm_source=bing&utm_medium=cpc&utm_campaign=Logo%20Design&utm_term=logo%20creator&utm_content=Logo%201)
  7. [w3school](https://www.w3schools.com/)
  8. [Gantt Chart](https://create.microsoft.com/en-us/templates/gantt-charts)
+ 9. [W3C](https://validator.w3.org/)
