@@ -11,26 +11,23 @@
 7. [Typography](#typography)
 8. [Imagery](#imagery)
 9. [Testing](#testing)
-10. [Wireframes](#wireframes)
+10. [Programme-used](#programme-used)
+
 
 # Introduction
  - Welcome to [DishFinder](https://farah-94.github.io/Dishfinder/index), this is an innovative website designed to revolutionize the way you discover and enjoy your favorite dishes. Experinece the power of HTML, CSS, and JavaScript, our platform provides a seamless and engaging user experience. On the backend, we've integrated Node.js and Express to provide the great performance and efficient server-side operations. Additionally, jQuery enhances the interactivity and responsiveness of our site.
+ 
+    ### Website 
+    - [Index](/images/index.png)
+    - [order](/images/order.png)
+    - [booktable](/images/booktable.png)
+  
 
- ## Purpose
+ # Purpose
   - DishFinder allows you to search for any dish by name and instantly find nearby restaurants that offer it with high ratings. Whether you're planning to dine out or prefer the convenience of ordering online, our platform provides you with the option to book a table or place an order directly from the comfort of your home.
 
- ## Programme used
- 1. [Google Fonts](https://fonts.google.com/)
- 2. [githUb](https://github.com/)
- 3. [Figma](https://www.figma.com/)
- 4. [jQuery](https://jquery.com/) 
- 5. [Freepik](https://www.freepik.com/)
- 6. [logoapp](https://logo.app/?msclkid=e9b12584f9051a2a4d83423abcfe4636&utm_source=bing&utm_medium=cpc&utm_campaign=Logo%20Design&utm_term=logo%20creator&utm_content=Logo%201)
- 7. [w3school](https://www.w3schools.com/)
- 8. [Gantt Chart](https://create.microsoft.com/en-us/templates/gantt-charts)
 
-
-## Deployment
+# Deployment
 1. Login to GitHub
 2. From the list of the repositories on the screen, select projectonemilestoneone
 3. From the menu items near the top of the page, select settings
@@ -58,8 +55,8 @@
    - Press Enter. Your local clone will be created.
 
 
-## User Experience
-  ### User stories
+# User Experience
+  ## User stories
    * First-time Visitor 
      - For first-time visitors, we aim to make your initial interaction smooth and intuitive.
      - The website is designed with a straightforward layout, making it easy to explore and easy to understand.
@@ -80,7 +77,7 @@
      - We provide you best restaurants details. So you can make your decision.
      - Our website helps you plan your dining experiences by book a table.  
 
-### Design
+# Design
  * Simplicity
      - We maintain a clean and simple design to enhance usability.
  * Consistency
@@ -95,15 +92,15 @@
  * Language used 
      - **HTML**, **CSS** and **JavaScript**
 
-## Wireframes
+ ### Wireframes
 - [index.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?m=auto&t=D0OllQeRbRTAJY2U-6)
 - [order.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?node-id=9-2&t=vAhhSK0mWCHZa5kp-1)
 - [booktable.html](https://www.figma.com/design/FendFc4wz0zGChrs1P6zh1/DishFinder?node-id=9-27&t=vAhhSK0mWCHZa5kp-1)
 
-## Gantt Chart
+ ### Gantt Chart
 - [Project Gantt Chart](https://1drv.ms/x/c/e1af83f369e97fb7/EbNxbjGCaRRPi7g7jGNPP9AB8MPIjW2vIQChNVPAcso9Ww?e=mla60Y)
 
-### Colour Scheme
+## Colour Scheme
  *  index.html 
     - page background-color: white 
     - header background-color : #968e5c          
@@ -123,10 +120,10 @@
      - Google italic fonts : @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Vesper+Libre:wght@400;500;700;900&display=swap');
 
 ### Imagery
-  #### Index.html
-   ##### Logo
+   #### Logo
 - [logo](images/logo3.png)     
   - logo created by [logo.app](https://logo.app/?msclkid=ba7cfa0b51671acf237c9db510c797c7&utm_source=bing&utm_medium=cpc&utm_campaign=Logo%20Design&utm_term=logo%20maker%20free&utm_content=Logo%201)
+
 * Content Images 
 - [restaurant-slider](images/one.jpg)
 - [restaurant-slider](images/two.jpg)
@@ -160,3 +157,13 @@
 
 ### JSHint
 - [JSHint](/images/jshint.png)
+
+ ## Programme used
+ 1. [Google Fonts](https://fonts.google.com/)
+ 2. [githUb](https://github.com/)
+ 3. [Figma](https://www.figma.com/)
+ 4. [jQuery](https://jquery.com/) 
+ 5. [Freepik](https://www.freepik.com/)
+ 6. [logoapp](https://logo.app/?msclkid=e9b12584f9051a2a4d83423abcfe4636&utm_source=bing&utm_medium=cpc&utm_campaign=Logo%20Design&utm_term=logo%20creator&utm_content=Logo%201)
+ 7. [w3school](https://www.w3schools.com/)
+ 8. [Gantt Chart](https://create.microsoft.com/en-us/templates/gantt-charts)
