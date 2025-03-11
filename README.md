@@ -107,9 +107,9 @@
 # Colour Scheme
  *  index.html 
     - page background-color: white 
-    - header background-color : #968e5c          
-    - footer background-color : #6f4b1c
-    - content background-color :rgb(229, 196, 153)
+    - header background-color : #968e5c (Closely Related To Willow Tea)       
+    - footer background-color : #6f4b1c (Closely Related To Sepia)
+    - content background-color :rgb(229, 196, 153) (Closely Related To )
 
  * order.html
     - page background-color: white 
