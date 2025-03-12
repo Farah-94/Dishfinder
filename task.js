@@ -50,7 +50,7 @@ async function searchRestaurants() {
   resultsDropdown.innerHTML = '';
 
   try {
-      const response = await fetch(`http://localhost:3000/search?query=${input}`);
+      const response = await fetch(`https://dish-finder-c849795c3a91.herokuapp.com/search?query=${input}`);
       const data = await response.json();
       console.log('Search results:', data); // Debugging line
       if (data.results.length > 0) {
@@ -74,6 +74,7 @@ async function searchRestaurants() {
       resultsDropdown.appendChild(option);
   }
 }
+
 
   
   function optionFunction() {

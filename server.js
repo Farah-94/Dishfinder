@@ -3,9 +3,9 @@ import fetch from 'node-fetch';
 import cors from 'cors';
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
-const apiKey = 'AIzaSyABjc1lKGsa5X0uylefcIKxMt_s-u251cY'; 
+const apiKey = 'AIzaSyABjc1lKGsa5X0uylefcIKxMt_s-u251cY';
 
 app.use(cors());
 
@@ -24,6 +24,6 @@ app.get('/search', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`Proxy server listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(`Proxy server listening at http://localhost:${PORT}`);
 });
