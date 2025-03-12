@@ -1,6 +1,7 @@
 import express from 'express';
 import fetch from 'node-fetch';
 import cors from 'cors';
+import path from 'path';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -22,6 +23,12 @@ app.get('/search', async (req, res) => {
         console.error('Error fetching data:', error);
         res.status(500).send('Internal Server Error');
     }
+});
+
+
+app.get('/', (req, res) => {
+    res.send('Welcome to the Dish Finder App!');
+
 });
 
 app.listen(PORT, () => {
