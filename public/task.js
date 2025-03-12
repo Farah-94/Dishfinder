@@ -76,6 +76,7 @@ async function searchRestaurants() {
 }
 
 
+
   
   function optionFunction() {
     document.getElementById("myDropdown").classList.toggle("show");

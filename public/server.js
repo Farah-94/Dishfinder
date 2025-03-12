@@ -10,6 +10,9 @@ const apiKey = 'AIzaSyABjc1lKGsa5X0uylefcIKxMt_s-u251cY';
 
 app.use(cors());
 
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.get('/search', async (req, res) => {
     console.log('Received request:', req.query);
     const { query } = req.query;
@@ -25,10 +28,19 @@ app.get('/search', async (req, res) => {
     }
 });
 
-
+// Serve index.html for root path
 app.get('/', (req, res) => {
-    res.send('Welcome to the Dish Finder App!');
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
+// Serve order.html for /order path
+app.get('/order', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'order.html'));
+});
+
+// Serve booktable.html for /booktable path
+app.get('/booktable', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'booktable.html'));
 });
 
 app.listen(PORT, () => {
