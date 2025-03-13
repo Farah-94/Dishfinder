@@ -129,18 +129,18 @@
   - logo created by [logo.app](https://logo.app/?msclkid=ba7cfa0b51671acf237c9db510c797c7&utm_source=bing&utm_medium=cpc&utm_campaign=Logo%20Design&utm_term=logo%20maker%20free&utm_content=Logo%201)
 
 * Content Images 
-- [restaurant-slider](images/one.jpg)
-- [restaurant-slider](images/two.jpg)
-- [restaurant-slider](images/three.jpg)
-- [restaurant-slider](images/four.jpg)
-- [restaurant-slider](images/five.jpg)
-- [restaurant-slider](images/six.jpg)
-- [review-person](images/person1.jpg)
-- [review-person](images/person2.jpg)
-- [review-person](images/person3.jpg)
-- [review-person](images/person4.jpg)
-- [review-person](images/person5.jpg)
-- [review-person](images/person6.jpg)
+- [restaurant-slider](public/images/one.jpg)
+- [restaurant-slider](public/images/two.jpg)
+- [restaurant-slider](public/images/three.jpg)
+- [restaurant-slider](public/images/four.jpg)
+- [restaurant-slider](public/images/five.jpg)
+- [restaurant-slider](public/images/six.jpg)
+- [review-person](public/images/person1.jpg)
+- [review-person](public/images/person2.jpg)
+- [review-person](public/images/person3.jpg)
+- [review-person](public/images/person4.jpg)
+- [review-person](public/images/person5.jpg)
+- [review-person](public/images/person6.jpg)
    - Images taken from [Freepik](https://www.freepik.com/)
 
 # Testing
@@ -148,19 +148,19 @@
   - [Test Plan](https://1drv.ms/w/c/e1af83f369e97fb7/EeGRedxvcdJFsWF-GYSQpH0BGP9XWgRi9BNgFmlA6PDrhQ?e=lGBLSr)
 
  ### HTML Validation
- - [index.html](/images/index.html%20validation.png)
- - [order.html](/images/order.html%20validation.png)
- - [bookTable.html](/images/booktablehtml%20validationpng)
+ - [index.html](public/images/index.html%20validation.png)
+ - [order.html](public/images/order.html%20validation.png)
+ - [bookTable.html](public/images/booktablehtml%20validationpng)
 
  ### Css Validation
- - [style.css](/images/css%20validation.png)
+ - [style.css](public/images/css%20validation.png)
 
  ### Performance
- - [Page performance mobile](/images/performance.png)
- - [Page performance desktop](/images/performance%20(2).png)
+ - [Page performance mobile](public/images/performance.png)
+ - [Page performance desktop](public/images/performance%20(2).png)
 
  ### JSHint
- - [JSHint](/images/jshint.png)
+ - [JSHint](public/images/jshint.png)
 
 # Programme used
  1. [Google Fonts](https://fonts.google.com/)
