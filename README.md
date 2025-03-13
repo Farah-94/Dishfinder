@@ -22,9 +22,9 @@
 - By clicking the above options, user need to fill out the required form. This platform provide an engaging user experience.
 
   ## Website 
-    - [Index](/images/index.png)
-    - [order](/images/order.png)
-    - [booktable](/images/booktable.png)
+    - [Index](public/images/index.png)
+    - [order](public/images/order.png)
+    - [booktable](public/images/booktable.png)
   
 
  # Purpose
