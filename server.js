@@ -10,12 +10,14 @@ const PORT = process.env.PORT || 3000;
 const apiKey = 'AIzaSyABjc1lKGsa5X0uylefcIKxMt_s-u251cY';
 
 app.use(cors());
+app.use(express.urlencoded({ extended: true })); 
+app.use(express.json()); // To handle JSON data
 
-// Get __filename and __dirname in ES module scope
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Serve static files from the 'public' directory
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/search', async (req, res) => {
@@ -48,7 +50,17 @@ app.get('/booktable', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'booktable.html'));
 });
 
-app.get('/', (req, res) => {
+// Handle POST request for order form and redirect to confirmation.html
+app.post('/order', (req, res) => {
+    // Handle form data here
+    console.log('Order form data:', req.body);
+    res.sendFile(path.join(__dirname, 'public', 'confirmation.html'));
+});
+
+// Handle POST request for booking form and redirect to confirmation.html
+app.post('/booktable', (req, res) => {
+    // Handle form data here
+    console.log('Booking form data:', req.body);
     res.sendFile(path.join(__dirname, 'public', 'confirmation.html'));
 });
 
