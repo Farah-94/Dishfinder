@@ -11,7 +11,7 @@ const apiKey = 'AIzaSyABjc1lKGsa5X0uylefcIKxMt_s-u251cY';
 
 app.use(cors());
 
-// Get __dirname equivalent in ES modules
+// Get __filename and __dirname in ES module scope
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -46,6 +46,10 @@ app.get('/order', (req, res) => {
 // Serve booktable.html for /booktable path
 app.get('/booktable', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'booktable.html'));
+});
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'confirmation.html'));
 });
 
 app.listen(PORT, () => {

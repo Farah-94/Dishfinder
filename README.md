@@ -1,5 +1,5 @@
 # **DishFinder**
-<img src="images/responsive.png" with="100%" height="30%" >
+<img src="public/images/responsive.png" width="100%" height="30%" >
 
 # Table of Contents
 1. [Introduction](#introduction)
