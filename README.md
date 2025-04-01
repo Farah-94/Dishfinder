@@ -125,7 +125,7 @@
 
 # Imagery
    #### Logo
-- [logo](images/logo3.png)     
+- [logo](public/images/logo3.png)     
   - logo created by [logo.app](https://logo.app/?msclkid=ba7cfa0b51671acf237c9db510c797c7&utm_source=bing&utm_medium=cpc&utm_campaign=Logo%20Design&utm_term=logo%20maker%20free&utm_content=Logo%201)
 
 * Content Images 
