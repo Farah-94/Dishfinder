@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const apiKey = 'AIzaSyABjc1lKGsa5X0uylefcIKxMt_s-u251cY';
+const apiKey = 'process.env.GOOGLE_API_KEY';
 
 app.use(cors());
 app.use(express.urlencoded({ extended: true })); 
