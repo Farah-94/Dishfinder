@@ -44,46 +44,51 @@ document.querySelectorAll('a').forEach(function(anchor) {
 });
 
 
+window.searchRestaurants = searchRestaurants;
+
+// Define the searchRestaurants function
 async function searchRestaurants() {
   const input = document.getElementById('searchInput').value.toLowerCase();
   const resultsDropdown = document.getElementById('resultsDropdown');
   resultsDropdown.innerHTML = '';
 
   try {
-      const response = await fetch(`https://dish-finder-c849795c3a91.herokuapp.com/search?query=${input}`);
-      const data = await response.json();
-      console.log('Search results:', data); 
-      if (data.results.length > 0) {
-        // it will show message "Results received" in the dropdown
-        // before showing the results of the restaurants
-        const headerOption = document.createElement('option');
-        headerOption.value = '';
-        headerOption.textContent = 'Results received';
-        resultsDropdown.appendChild(headerOption);
-  
+    const response = await fetch(`https://dish-finder-c849795c3a91.herokuapp.com/search?query=${input}`);
+    const data = await response.json();
+    console.log('Search results:', data);
 
+    if (data.results.length > 0) {
+      // Show message "Results received" in the dropdown before listing restaurants
+      const headerOption = document.createElement('option');
+      headerOption.value = '';
+      headerOption.textContent = 'Results received';
+      resultsDropdown.appendChild(headerOption);
 
-          data.results.forEach(restaurant => {
-              const option = document.createElement('option');
-              option.value = restaurant.name;
-              option.textContent = `${restaurant.name} - Rating: ${restaurant.rating} - vicinity: ${restaurant.vicinity}`;
-              resultsDropdown.appendChild(option);
-          });
-      } else {
-          const option = document.createElement('option');
-          option.value = '';
-          option.textContent = 'No results found';
-          resultsDropdown.appendChild(option);
-      }
-  } catch (error) {
-      console.error('Error:', error);
+      data.results.forEach(restaurant => {
+        const option = document.createElement('option');
+        option.value = restaurant.name;
+        option.textContent = `${restaurant.name} - Rating: ${restaurant.rating} - vicinity: ${restaurant.vicinity}`;
+        resultsDropdown.appendChild(option);
+      });
+    } else {
       const option = document.createElement('option');
       option.value = '';
-      option.textContent = 'An error occurred while fetching data.';
+      option.textContent = 'No results found';
       resultsDropdown.appendChild(option);
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    const option = document.createElement('option');
+    option.value = '';
+    option.textContent = 'An error occurred while fetching data.';
+    resultsDropdown.appendChild(option);
   }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  const searchBtn = document.getElementById('searchBtn');
+  searchBtn.addEventListener('click', searchRestaurants);
+});
 
 
   
@@ -110,6 +115,6 @@ var selectedRestaurant = document.getElementById("resultsDropdown").value;
 }
 
   export { searchRestaurants };
-  window.searchRestaurants = searchRestaurants;
+ 
 
 

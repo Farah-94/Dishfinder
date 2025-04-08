@@ -18,8 +18,7 @@
         <div class="search-form">
           <h1>Restaurant Search</h1>
           <input type="text" id="searchInput" placeholder="Enter dish..." aria-label="Search input for dishes">
-          <button type="submit" onclick="searchRestaurants()" aria-label="submit button">Submit</button>
-           <br>
+          <button id="searchBtn" type="submit" aria-label="submit button">Submit</button>           <br>
        
           <label for="resultsDropdown"> List</label>
           <select id="resultsDropdown" class="display-data" onchange="store()" aria-label="Dropdown for restaurant list">
@@ -144,6 +143,7 @@
 
   </footer>
 
-  <script type="module" src="task.js"></script>
+
+<script type="module" src="task.js"></script>
 </body>
 </html>
