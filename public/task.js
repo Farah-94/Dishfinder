@@ -92,6 +92,15 @@ function store() {
     localStorage.setItem("selectedRestaurant", selectedRestaurant);
   }
 }
+document.addEventListener('DOMContentLoaded', () => {
+  const dropdown = document.getElementById("resultsDropdown");
+  if (dropdown) {
+    dropdown.addEventListener('change', store);
+  } else {
+    console.error("Element with ID 'resultsDropdown' not found.");
+  }
+});
+
 
 function displayRestaurantName() {
   const restaurantName = localStorage.getItem("selectedRestaurant");
