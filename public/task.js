@@ -15,38 +15,31 @@ document.querySelectorAll('a').forEach(function(anchor) {
   });
 });
 
-  document.addEventListener('DOMContentLoaded', (event) => {
-    const imageSlider = document.querySelector('#image-slider .slides');
-    const reviewSlider = document.querySelector('#review-slider .slides');
-    const imageSlides = document.querySelectorAll('#image-slider .slide');
-    const reviewSlides = document.querySelectorAll('#review-slider .slide');
-    let currentIndex = 0;
+document.addEventListener('DOMContentLoaded', (event) => {
+  const imageSlider = document.querySelector('#image-slider .slides');
+  const reviewSlider = document.querySelector('#review-slider .slides');
+  const imageSlides = document.querySelectorAll('#image-slider .slide');
+  const reviewSlides = document.querySelectorAll('#review-slider .slide');
+  let currentIndex = 0;
 
-    function startSliders() {
-        setInterval(() => {
-            // Move to the next slide
-            currentIndex = (currentIndex + 1) % imageSlides.length;
+  function startSliders() {
+      setInterval(() => {
+          currentIndex = (currentIndex + 1) % imageSlides.length;
 
-            // Apply the transform to both sliders
-            imageSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
-            reviewSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
+          imageSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
+          reviewSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
 
-            // If we're at the end of the slides, add a delay
-            if (currentIndex === imageSlides.length - 1) {
-                setTimeout(() => {
-                    currentIndex = -1; // Reset index to start from 0 on the next interval
-                }, 4000); // Delay time in milliseconds
-            }
-        }, 5000); // Change slide every 5 seconds
-    }
+          if (currentIndex === imageSlides.length - 1) {
+              setTimeout(() => {
+                  currentIndex = -1;
+              }, 4000);
+          }
+      }, 5000);
+  }
 
-    startSliders();
+  startSliders();
 });
 
-
-window.searchRestaurants = searchRestaurants;
-
-// Define the searchRestaurants function
 async function searchRestaurants() {
   const input = document.getElementById('searchInput').value.toLowerCase();
   const resultsDropdown = document.getElementById('resultsDropdown');
@@ -58,7 +51,6 @@ async function searchRestaurants() {
     console.log('Search results:', data);
 
     if (data.results.length > 0) {
-      // Show message "Results received" in the dropdown before listing restaurants
       const headerOption = document.createElement('option');
       headerOption.value = '';
       headerOption.textContent = 'Results received';
@@ -90,31 +82,26 @@ document.addEventListener('DOMContentLoaded', () => {
   searchBtn.addEventListener('click', searchRestaurants);
 });
 
-
-  
-  function optionFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-  function store() {
-var selectedRestaurant = document.getElementById("resultsDropdown").value;
-    if (selectedRestaurant)
-       {
-      localStorage.setItem("selectedRestaurant", selectedRestaurant);
-    }
-  }
-  
-
-
-  function displayRestaurantName() {
-    const restaurantName = localStorage.getItem("selectedRestaurant");
-    if (restaurantName) {
-        document.getElementById("restaurantName").innerText += restaurantName;
-        localStorage.removeItem("selectedRestaurant"); // Clear the restaurant name from local storage
-    }
+function optionFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
 }
 
-  export { searchRestaurants };
- 
+function store() {
+  var selectedRestaurant = document.getElementById("resultsDropdown").value;
+  if (selectedRestaurant) {
+    localStorage.setItem("selectedRestaurant", selectedRestaurant);
+  }
+}
 
+function displayRestaurantName() {
+  const restaurantName = localStorage.getItem("selectedRestaurant");
+  if (restaurantName) {
+      document.getElementById("restaurantName").innerText += restaurantName;
+      localStorage.removeItem("selectedRestaurant");
+  }
+}
 
+// globally accessible functions
+window.searchRestaurants = searchRestaurants;
+window.store = store;
+window.optionFunction = optionFunction;
