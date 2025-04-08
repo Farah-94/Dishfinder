@@ -59,14 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const searchBtn = document.getElementById("searchBtn");
-  if (searchBtn) {
-    searchBtn.addEventListener('click', searchRestaurants);
-  } else {
-    console.error("Element with ID 'searchBtn' not found.");
-  }
-});
 
 async function searchRestaurants() {
   const input = document.getElementById('searchInput').value.toLowerCase();
