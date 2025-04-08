@@ -51,14 +51,14 @@ app.get('/booktable', (req, res) => {
 
 // Handle POST request for order form and redirect to confirmation.html
 app.post('/order', (req, res) => {
-    // Handle form data here
+  
     console.log('Order form data:', req.body);
     res.sendFile(path.join(__dirname, 'public', 'confirmation.html'));
 });
 
 // Handle POST request for booking form and redirect to confirmation.html
 app.post('/booktable', (req, res) => {
-    // Handle form data here
+    
     console.log('Booking form data:', req.body);
     res.sendFile(path.join(__dirname, 'public', 'confirmation.html'));
 });

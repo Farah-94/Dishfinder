@@ -100,4 +100,5 @@ var selectedRestaurant = document.getElementById("resultsDropdown").value;
     }
 }
 
-  
+  export { searchRestaurants };
+

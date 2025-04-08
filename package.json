@@ -4,14 +4,19 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --config=jest1.js"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "node-fetch": "^2.6.1",
-    "cors": "^2.8.5"
+    "node-fetch": "^2.6.1"
   },
   "engines": {
     "node": "14.x"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   }
 }
