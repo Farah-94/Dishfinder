@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (currentIndex === imageSlides.length - 1) {
           setTimeout(() => {
-            currentIndex = -1; 
-          }, 4000); 
+            currentIndex = -1;
+          }, 4000);
         }
       }, 5000);
     }
@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     console.error("Slider elements or slides not found.");
   }
+});
+
 
   const searchBtn = document.getElementById('searchBtn');
   if (searchBtn) {
@@ -57,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     console.error("Element with ID 'resultsDropdown' not found.");
   }
-});
+
 
 async function searchRestaurants() {
   const input = document.getElementById('searchInput').value.toLowerCase();
