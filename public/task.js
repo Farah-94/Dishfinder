@@ -1,5 +1,19 @@
 /* jshint esversion: 8 */
 
+function waitForElement(selector, callback) {
+  const elementCheck = setInterval(() => {
+    const element = document.querySelector(selector);
+    if (element) {
+      clearInterval(elementCheck);
+      callback(element);
+    }
+  }, 100); // Check every 100ms
+}
+
+waitForElement('#resultsDropdown', (dropdown) => {
+  dropdown.addEventListener('change', store);
+});
+
 function smallScreen() { 
   var x = document.getElementById("navbar");
   if (x.className === "navigation") { 
@@ -45,20 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
 document.addEventListener('DOMContentLoaded', () => {
-  const searchBtn = document.getElementById('searchBtn');
+  const searchBtn = document.getElementById("searchBtn");
   if (searchBtn) {
     searchBtn.addEventListener('click', searchRestaurants);
   } else {
     console.error("Element with ID 'searchBtn' not found.");
-  }
-
-  const dropdown = document.getElementById("resultsDropdown");
-  if (dropdown) {
-    dropdown.addEventListener('change', store);
-  } else {
-    console.error("Element with ID 'resultsDropdown' not found.");
   }
 });
 
