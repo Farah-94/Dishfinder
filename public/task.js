@@ -15,29 +15,48 @@ document.querySelectorAll('a').forEach(function(anchor) {
   });
 });
 
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
   const imageSlider = document.querySelector('#image-slider .slides');
   const reviewSlider = document.querySelector('#review-slider .slides');
   const imageSlides = document.querySelectorAll('#image-slider .slide');
   const reviewSlides = document.querySelectorAll('#review-slider .slide');
-  let currentIndex = 0;
 
-  function startSliders() {
+  if (imageSlider && reviewSlider && imageSlides.length > 0 && reviewSlides.length > 0) {
+    let currentIndex = 0;
+
+    function startSliders() {
       setInterval(() => {
-          currentIndex = (currentIndex + 1) % imageSlides.length;
+        currentIndex = (currentIndex + 1) % imageSlides.length;
 
-          imageSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
-          reviewSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        imageSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        reviewSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
 
-          if (currentIndex === imageSlides.length - 1) {
-              setTimeout(() => {
-                  currentIndex = -1;
-              }, 4000);
-          }
+        if (currentIndex === imageSlides.length - 1) {
+          setTimeout(() => {
+            currentIndex = -1; 
+          }, 4000); 
+        }
       }, 5000);
+    }
+
+    startSliders();
+  } else {
+    console.error("Slider elements or slides not found.");
   }
 
-  startSliders();
+  const searchBtn = document.getElementById('searchBtn');
+  if (searchBtn) {
+    searchBtn.addEventListener('click', searchRestaurants);
+  } else {
+    console.error("Element with ID 'searchBtn' not found.");
+  }
+
+  const dropdown = document.getElementById("resultsDropdown");
+  if (dropdown) {
+    dropdown.addEventListener('change', store);
+  } else {
+    console.error("Element with ID 'resultsDropdown' not found.");
+  }
 });
 
 async function searchRestaurants() {
@@ -77,40 +96,34 @@ async function searchRestaurants() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const searchBtn = document.getElementById('searchBtn');
-  searchBtn.addEventListener('click', searchRestaurants);
-});
-
 function optionFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+  const dropdown = document.getElementById("myDropdown");
+  if (dropdown) {
+    dropdown.classList.toggle("show");
+  } else {
+    console.error("Element with ID 'myDropdown' not found.");
+  }
 }
 
 function store() {
-  var selectedRestaurant = document.getElementById("resultsDropdown").value;
+  const selectedRestaurant = document.getElementById("resultsDropdown").value;
   if (selectedRestaurant) {
     localStorage.setItem("selectedRestaurant", selectedRestaurant);
   }
 }
-document.addEventListener('DOMContentLoaded', () => {
-  const dropdown = document.getElementById("resultsDropdown");
-  if (dropdown) {
-    dropdown.addEventListener('change', store);
-  } else {
-    console.error("Element with ID 'resultsDropdown' not found.");
-  }
-});
-
 
 function displayRestaurantName() {
   const restaurantName = localStorage.getItem("selectedRestaurant");
   if (restaurantName) {
-      document.getElementById("restaurantName").innerText += restaurantName;
-      localStorage.removeItem("selectedRestaurant");
+    const displayElement = document.getElementById("restaurantName");
+    if (displayElement) {
+      displayElement.innerText += restaurantName;
+    }
+    localStorage.removeItem("selectedRestaurant");
   }
 }
 
-// globally accessible functions
+// Globally accessible functions
 window.searchRestaurants = searchRestaurants;
 window.store = store;
 window.optionFunction = optionFunction;
