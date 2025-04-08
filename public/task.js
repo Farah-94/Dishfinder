@@ -52,8 +52,17 @@ async function searchRestaurants() {
   try {
       const response = await fetch(`https://dish-finder-c849795c3a91.herokuapp.com/search?query=${input}`);
       const data = await response.json();
-      console.log('Search results:', data); // Debugging line
+      console.log('Search results:', data); 
       if (data.results.length > 0) {
+        // it will show message "Results received" in the dropdown
+        // before showing the results of the restaurants
+        const headerOption = document.createElement('option');
+        headerOption.value = '';
+        headerOption.textContent = 'Results received';
+        resultsDropdown.appendChild(headerOption);
+  
+
+
           data.results.forEach(restaurant => {
               const option = document.createElement('option');
               option.value = restaurant.name;
@@ -101,4 +110,6 @@ var selectedRestaurant = document.getElementById("resultsDropdown").value;
 }
 
   export { searchRestaurants };
+  window.searchRestaurants = searchRestaurants;
+
 
