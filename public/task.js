@@ -1,5 +1,6 @@
 /* jshint esversion: 8 */
 
+// Responsive navigation
 function smallScreen() {
   const x = document.getElementById("navbar");
   if (x.className === "navigation") {
@@ -9,12 +10,11 @@ function smallScreen() {
   }
 }
 
-document.querySelectorAll('a').forEach(function (anchor) {
-  anchor.addEventListener('click', function () {
-    smallScreen();
-  });
+document.querySelectorAll('a').forEach(anchor => {
+  anchor.addEventListener('click', smallScreen);
 });
 
+// Slider functionality
 document.addEventListener('DOMContentLoaded', () => {
   const imageSlider = document.querySelector('#image-slider .slides');
   const reviewSlider = document.querySelector('#review-slider .slides');
@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Search functionality
 document.addEventListener('DOMContentLoaded', () => {
   const searchBtn = document.getElementById("searchBtn");
   if (searchBtn) {
@@ -67,7 +68,7 @@ async function searchRestaurants() {
       data.results.forEach(restaurant => {
         const option = document.createElement('option');
         option.value = restaurant.name;
-        option.textContent = `${restaurant.name} - Rating: ${restaurant.rating} - vicinity: ${restaurant.vicinity}`;
+        option.textContent = `${restaurant.name} - Rating: ${restaurant.rating} - Vicinity: ${restaurant.vicinity}`;
         resultsDropdown.appendChild(option);
       });
     } else {
@@ -85,6 +86,7 @@ async function searchRestaurants() {
   }
 }
 
+// Dropdown toggle
 function optionFunction() {
   const dropdown = document.getElementById("myDropdown");
   if (dropdown) {
@@ -94,28 +96,30 @@ function optionFunction() {
   }
 }
 
+// Storing selected restaurant
 function store(option) {
   const selectedRestaurant = document.getElementById("resultsDropdown").value;
   if (selectedRestaurant) {
-      localStorage.setItem("selectedRestaurant", selectedRestaurant); // Save restaurant name
-     
-      if (option === "online") {
-          window.location.href = "online.html";
-      } else if (option === "booktable") {
-          window.location.href = "booktable.html";
-      }
+    localStorage.setItem("selectedRestaurant", selectedRestaurant); // Save restaurant name
+
+    if (option === "online") {
+      window.location.href = "online.html";
+    } else if (option === "booktable") {
+      window.location.href = "booktable.html";
+    }
   } else {
-      alert("Please select a restaurant.");
+    alert("Please select a restaurant.");
   }
 }
 
-function displayRestaurantName() {
+// Display restaurant name
+document.addEventListener('DOMContentLoaded', () => {
   const restaurantName = localStorage.getItem("selectedRestaurant");
   if (restaurantName) {
     const displayElement = document.getElementById("restaurantName");
     if (displayElement) {
-      displayElement.innerText += restaurantName;
+      displayElement.innerText = restaurantName; // Direct assignment for clarity
     }
     localStorage.removeItem("selectedRestaurant");
   }
-}
+});
