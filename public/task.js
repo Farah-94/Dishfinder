@@ -94,10 +94,18 @@ function optionFunction() {
   }
 }
 
-function store() {
+function store(option) {
   const selectedRestaurant = document.getElementById("resultsDropdown").value;
   if (selectedRestaurant) {
-    localStorage.setItem("selectedRestaurant", selectedRestaurant);
+      localStorage.setItem("selectedRestaurant", selectedRestaurant); // Save restaurant name
+     
+      if (option === "online") {
+          window.location.href = "online.html";
+      } else if (option === "booktable") {
+          window.location.href = "booktable.html";
+      }
+  } else {
+      alert("Please select a restaurant.");
   }
 }
 
