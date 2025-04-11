@@ -1,31 +1,17 @@
 /* jshint esversion: 8 */
 
-function waitForElement(selector, callback) {
-  const elementCheck = setInterval(() => {
-    const element = document.querySelector(selector);
-    if (element) {
-      clearInterval(elementCheck);
-      callback(element);
-    }
-  }, 100); // Check every 100ms
-}
-
-waitForElement('#resultsDropdown', (dropdown) => {
-  dropdown.addEventListener('change', store);
-});
-
-function smallScreen() { 
-  var x = document.getElementById("navbar");
-  if (x.className === "navigation") { 
-      x.className += " responsive"; 
+function smallScreen() {
+  const x = document.getElementById("navbar");
+  if (x.className === "navigation") {
+    x.className += " responsive";
   } else {
-      x.className = "navigation"; 
+    x.className = "navigation";
   }
 }
 
-document.querySelectorAll('a').forEach(function(anchor) {
-  anchor.addEventListener('click', function() {
-      smallScreen(); 
+document.querySelectorAll('a').forEach(function (anchor) {
+  anchor.addEventListener('click', function () {
+    smallScreen();
   });
 });
 
@@ -44,12 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         imageSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
         reviewSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
-
-        if (currentIndex === imageSlides.length - 1) {
-          setTimeout(() => {
-            currentIndex = -1;
-          }, 4000);
-        }
       }, 5000);
     }
 
@@ -131,8 +111,3 @@ function displayRestaurantName() {
     localStorage.removeItem("selectedRestaurant");
   }
 }
-
-// Globally accessible functions
-window.searchRestaurants = searchRestaurants;
-window.store = store;
-window.optionFunction = optionFunction;
